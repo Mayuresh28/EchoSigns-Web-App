@@ -1,12 +1,62 @@
-# React + Vite
+# Echosigns
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Echosigns is a modern video calling platform designed for the deaf and hard of hearing community, featuring sign language translation, learning resources, and accessible meeting tools.
 
-Currently, two official plugins are available:
+![Landing Page Screenshot](src/assets/Meeting-Apps.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **User Authentication**: Register and login securely with Firebase Authentication.
+- **Video Meetings**: Create or join video meetings with sign language support (powered by Jitsi).
+- **Schedule Management**: (Coming soon) Manage and schedule your meetings with calendar integration.
+- **Learn Sign Language**: Interactive lessons and video demonstrations for American Sign Language (ASL).
+- **Responsive & Accessible UI**: Built with Chakra UI for a clean, colorful, and accessible experience.
+- **Social Links**: Connect with the community via GitHub, Twitter, and LinkedIn.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend**: React (TypeScript & JavaScript)
+- **UI Library**: Chakra UI
+- **Authentication**: Firebase Auth
+- **Video Conferencing**: Jitsi Meet SDK
+- **State Management**: React Context API
+- **Routing**: React Router
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/echosigns.git
+   cd echosigns
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Firebase Setup:**
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable **Email/Password** authentication.
+   - Copy your Firebase config and update `src/firebase.js` accordingly.
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open in your browser:**
+   ```
+   http://localhost:5173
+   ```
